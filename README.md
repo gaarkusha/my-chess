@@ -13,7 +13,7 @@ Implemented player change, movement of pieces, check, raking (checking the first
 
 #### `git clone https://github.com/gaarkusha/my-chess`
 
-#### `cd my-chess/`
+#### `cd MyChess/`
 
 ### To install dependencies
 
