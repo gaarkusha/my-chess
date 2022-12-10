@@ -1,0 +1,173 @@
+$screen: 1224px
+
+*
+  margin: 0
+  padding: 0
+
+
+@media (min-width: $screen)
+
+  .screen
+    width: 100wv
+    height: 100vh
+    padding: 2px
+    background-image: url(assets/background.jpg)
+
+    
+  .board-wrapper
+    display: flex
+    justify-content: space-around
+    align-items: center
+  
+  .timerBlock 
+  
+  .text-timer 
+    font-family: sans-serif
+    font-size: 25px
+    font-weight: bold
+    color: black
+
+  .button-restart-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    
+  
+  .button-restart
+    background-color: transparent
+    padding: 3px 15px 3px 15px
+    font-family: sans-serif
+    font-size: 20px
+    font-weight: bold
+    border-radius: 5px
+    transition: .5s
+  
+  .button-restart:hover
+    background-color: grey
+
+
+  .board
+    width: calc(64px * 8)
+    height: calc(64px * 8)
+    display: flex
+    flex-wrap: wrap
+
+    &Container
+      display: flex
+      flex-direction: column
+
+  .current-player-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  
+  .text
+    font-family: sans-serif
+    font-size: 20px
+    font-weight: bold
+    margin-top: 8px
+
+  .cell
+    width: 64px
+    height: 64px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    & img
+      width: 48px
+      height: 48px
+      position: relative
+  .available
+    height: 12px
+    width: 12px
+    border-radius: 50%
+    background-color: green
+
+  .lost
+    height: calc(50vh - 60px)
+    
+    &.img
+      width: 20px
+      height: 20px
+  
+  .lost-figure-title
+    font-family: sans-serif
+    font-size: 25px
+    font-weight: bold
+    color: black
+      
+  .lost-figure-wrapper
+    width: 240px
+    display: flex
+    flex-wrap: wrap
+  
+  .figure-name
+    font-family: sans-serif
+    font-size: 15px
+    font-weight: bold
+    color: black
+    width: 80px
+    height: 35px
+  
+
+
+@media (max-width: $screen)
+  .screen
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 25px
+  h3
+    text-align: center
+  .timerBlock
+    display: flex
+    flex-direction: column
+    align-items: center
+  .board
+    padding-top: 15px
+    width: calc(45px * 8)
+    height: calc(45px * 8)
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 40px
+    &Container
+      display: flex
+      flex-direction: column
+
+  .cell
+    width: 45px
+    height: 45px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    & img
+      width: 33px
+      height: 33px
+      position: relative
+  .available
+    height: 8px
+    width: 8px
+    border-radius: 50%
+    background-color: green
+
+  .lost
+    height: calc(40vh - 50px)
+    
+    &.img
+      width: 15px
+      height: 15px
+  .lostFiguresBlock
+    display: flex
+
+.black
+  background-image: url(assets/dark-wood.jpg)
+  width: 64px
+  height: 64px 
+
+.white
+  background-color: #FFFDFC
+
+.selected
+
